@@ -12,6 +12,15 @@ public abstract class VehicleManufacturer {
     private String vehicleModelName;
     private String vehicleType;
 
+    public VehicleManufacturer() {
+    }
+
+    public VehicleManufacturer(String vehicleName, String vehicleModelName, String vehicleType) {
+        this.vehicleName = vehicleName;
+        this.vehicleModelName = vehicleModelName;
+        this.vehicleType = vehicleType;
+    }
+
     public String getVehicleName() {
         return vehicleName;
     }
