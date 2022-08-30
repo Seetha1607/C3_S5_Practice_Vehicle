@@ -8,6 +8,14 @@ public class Car extends VehicleManufacturer implements Vehicle {
         super(vehicleName, vehicleModelName, vehicleType);
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     @Override
     // A method that returns an integer.
     public int maxSpeed(String vehicleType) {
