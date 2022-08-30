@@ -46,4 +46,13 @@ public abstract class VehicleManufacturer {
     }
 
     public abstract String getManufacturer();
+
+    @Override
+    public String toString() {
+        return "{" +
+                "Manufacturer name:" + vehicleName +
+                ",Model Name:" + vehicleModelName +
+                ",Type:" + vehicleType +
+                '}';
+    }
 }
