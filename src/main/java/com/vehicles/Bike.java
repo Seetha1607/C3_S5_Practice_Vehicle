@@ -17,4 +17,11 @@ public class Bike extends VehicleManufacturer implements Vehicle {
     public String getManufacturer() {
         return null;
     }
+
+    public Bike() {
+    }
+
+    public Bike(String vehicleName, String vehicleModelName, String vehicleType) {
+        super(vehicleName, vehicleModelName, vehicleType);
+    }
 }
