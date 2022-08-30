@@ -2,5 +2,11 @@ package com.vehicles;
 
 public interface Vehicle {
 
-    abstract int maxSpeed(String vehicleType);
+    /**
+     * Given a vehicle type, return the maximum speed of that vehicle.
+     *
+     * @param vehicleType a String, which can be "car", "truck", "motorcycle", or "bus".
+     * @return The maximum speed of the vehicle.
+     */
+    int maxSpeed(String vehicleType);
 }
