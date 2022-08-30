@@ -12,6 +12,8 @@ public class VehicleService {
         Bike myBike = new Bike("Honda", "CBR", "SportsBike");
         // Printing the speed of the bike.
         System.out.println("Bike type is SportsBike its speed is " + myBike.maxSpeed("sportsBike") + "km/h");
+        // Printing the manufacturer of the bike.
+        System.out.println(myBike.getManufacturer());
 
 
     }
