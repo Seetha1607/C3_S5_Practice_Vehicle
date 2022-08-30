@@ -21,7 +21,7 @@ public class VehicleService {
         Car myCar = new Car("Honda", "City", "Sedan");
         // Printing the speed of the car.
         System.out.println("Car type is Sedan its speed is " + myCar.maxSpeed("Sedan") + "km/h");
-
-
+        // Printing the manufacturer of the car.
+        System.out.println(myCar.getManufacturer());
     }
 }
