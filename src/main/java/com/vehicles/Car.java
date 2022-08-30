@@ -18,8 +18,14 @@ public class Car extends VehicleManufacturer implements Vehicle {
 
     @Override
     // A method that returns an integer.
+    // A method that returns an integer.
     public int maxSpeed(String vehicleType) {
-        return 0;
+        if (vehicleType.equals("SportsCar")) {
+            return 250;
+        } else if (vehicleType.equals("Sedan")) {
+            return 170;
+        }
+        return maxSpeed;
     }
 
     @Override
