@@ -19,6 +19,9 @@ public class VehicleService {
 
         // Creating an object of the class Car.
         Car myCar = new Car("Honda", "City", "Sedan");
+        // Printing the speed of the car.
+        System.out.println("Car type is Sedan its speed is " + myCar.maxSpeed("Sedan") + "km/h");
+
 
     }
 }
