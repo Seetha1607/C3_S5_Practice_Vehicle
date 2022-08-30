@@ -8,9 +8,33 @@
 package com.vehicles;
 
 public class Bike extends VehicleManufacturer implements Vehicle {
+    private int maxSpeed;
+
+    public Bike(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public Bike(String vehicleName, String vehicleModelName, String vehicleType, int maxSpeed) {
+        super(vehicleName, vehicleModelName, vehicleType);
+        this.maxSpeed = maxSpeed;
+    }
+
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     @Override
     public int maxSpeed(String vehicleType) {
-        return 0;
+        if (vehicleType.equals("sportsBike")) {
+            return 300;
+        } else if (vehicleType.equals("cruiser")) {
+            return 170;
+        }
+        return getMaxSpeed();
     }
 
     @Override
@@ -18,10 +42,4 @@ public class Bike extends VehicleManufacturer implements Vehicle {
         return null;
     }
 
-    public Bike() {
-    }
-
-    public Bike(String vehicleName, String vehicleModelName, String vehicleType) {
-        super(vehicleName, vehicleModelName, vehicleType);
-    }
 }
