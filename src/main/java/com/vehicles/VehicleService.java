@@ -8,4 +8,7 @@
 package com.vehicles;
 
 public class VehicleService {
+    public static void main(String[] args) {
+
+    }
 }
