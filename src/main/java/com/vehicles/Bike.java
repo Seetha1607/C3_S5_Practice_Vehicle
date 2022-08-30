@@ -7,6 +7,14 @@ public class Bike extends VehicleManufacturer implements Vehicle {
         super(vehicleName, vehicleModelName, vehicleType);
     }
 
+    public int getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
     @Override
     public String getManufacturer() {
         return null;
