@@ -9,6 +9,7 @@ package com.vehicles;
 
 public class VehicleService {
     public static void main(String[] args) {
+        Bike myBike = new Bike("Honda", "CBR", "SportsBike");
 
     }
 }
